@@ -107,7 +107,7 @@ async def infer(question:str,source:Optional[str]=Query(None)):
         logger.info(ret_context)
         #logger.info("In inference....before fetching history")
         #history = ch.history_to_text()
-        #logger.info(f"In inference....before streaming llm history...{history}")
+        logger.info("In inference....before streaming llm history...")
 
         return StreamingResponse(
             util.stream_llm_response(question, ret_context, history),
