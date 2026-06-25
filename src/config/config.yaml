@@ -1,0 +1,27 @@
+app:
+  name: "Advanced Ingestion-Inference"
+  version: "1.0.0"
+
+chroma:
+  path: "./src/AdvChroma_db"
+  collection_name: "Mul_Pdf_Documents"
+
+chunking:
+  chunk_size: 500
+  chunk_overlap: 100
+
+retrieval:
+  top_k: 15
+
+reranker:
+  model_name: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  top_n_context: 3
+
+llm:
+  provider: "groq"
+  model_name: "openai/gpt-oss-20b"
+  temperature: 0.7
+  streaming: True
+
+logging:
+  level: "INFO"

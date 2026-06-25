@@ -1,0 +1,669 @@
+2026-06-24 22:12:01 [INFO] This is print log printing in log file...........
+2026-06-24 22:12:02 [INFO] In inference............question===what is the tech stack of Project OpsBuddy?
+2026-06-24 22:12:02 [INFO] in retriever======
+2026-06-24 22:12:02 [INFO] None
+2026-06-24 22:12:02 [INFO] Before Chroma query
+2026-06-24 22:12:05 [INFO] after Chroma query
+2026-06-24 22:12:05 [INFO] results type = <class 'dict'>
+2026-06-24 22:12:05 [INFO] results keys = ['ids', 'embeddings', 'documents', 'uris', 'included', 'data', 'metadatas', 'distances']
+2026-06-24 22:12:05 [INFO] retrieved chunks = 15
+2026-06-24 22:12:05 [INFO] In inference.... before reranking
+2026-06-24 22:12:05 [INFO] In Rerank docs
+2026-06-24 22:12:05 [INFO] Retrieved 15 chunks
+2026-06-24 22:12:08 [INFO] In inference.... after reranking
+2026-06-24 22:12:08 [INFO] In inference.... before get context
+2026-06-24 22:12:08 [INFO] In inference.... after get context
+2026-06-24 22:12:08 [INFO] Role: Generative AI Engineer 
+Description: 
+Developed OpsBuddy, a persona-based AI assistant for IT Operations taken from POC to production for a leading retail client at TCS empowering 
+L2 support engineers to instantly understand the incident details, identify root causes(RCA), recommend resolutions and generate answers for 
+key operational metrics.  
+Key Contributions: 
+ Architected event-driven serverless Knowledge ingestion pipeline (S3 → Lambda → OpenSearch) powering a Multimodal RAG
+
+ Synthesized grounded RCA hypotheses using precedent-based retrieval evidence. 
+ Implemented Critic Agent (LLM-as-a-Judge) with confidence thresholds and automatic retry to reduce weakly grounded 
+outputs. 
+Tech Stack: Python, LangGraph, LangChain, OpenAI API, ChromaDB, Grafana,Structured  Prompt Engineering, Multi-Agent Orchestration 
+Project RFP Bot — AI Proposal Assistant (POC)
+
+• Programming & Frameworks: Python, PyTorch, Hugging Face,Git,Bitbucket. 
+• NLP & ML: Transformers (GPT, LLaMA, Claude, Mistral,Embeddings, Search/Retrieval (BM25, Hybrid, Cross Encoders)  
+PYDI SAI RAKESH KORADA 
+ 
+ Professional Experience 
+ 
+Tata Consultancy Services (TCS) 
+Generative AI Engineer | Aug 2023 – Present 
+ 
+Project :OpsBuddy – GenAI-Powered Incident Recommendation System (Production) 
+ 
+Role: Generative AI Engineer 
+Description:
+2026-06-24 22:12:08 [INFO] In inference....before fetching history
+2026-06-24 22:12:08 [INFO] In history_to_text
+2026-06-24 22:12:08 [INFO] In get_memory_messages
+2026-06-24 22:12:08 [INFO] In history_to_text after get memory messages...[]
+2026-06-24 22:12:08 [INFO] In inference....before streaming llm history...No previous conversation.
+2026-06-24 22:12:08 [INFO] in stream llm response
+2026-06-24 22:12:08 [INFO] prompt
+2026-06-24 22:12:08 [INFO] prompt==You are a helpful and conversational assistant. Answer the user's question based on the provided Context and our ongoing Conversation History.
+
+How to handle the information:
+- Use the Conversation History to understand what the user is referring to (like pronouns or previous topics).
+- Rely on the provided Context to give accurate answers. 
+- If the context simply doesn't contain the answer, kindly let the user know by saying: "I am sorry, I don't know."
+If the answer is not present in the context,
+respond with:
+
+"I am sorry, I don't know."
+
+Do not use external knowledge.
+
+Conversation History:
+No previous conversation.
+
+Context:
+Role: Generative AI Engineer 
+Description: 
+Developed OpsBuddy, a persona-based AI assistant for IT Operations taken from POC to production for a leading retail client at TCS empowering 
+L2 support engineers to instantly understand the incident details, identify root causes(RCA), recommend resolutions and generate answers for 
+key operational metrics.  
+Key Contributions: 
+ Architected event-driven serverless Knowledge ingestion pipeline (S3 → Lambda → OpenSearch) powering a Multimodal RAG
+
+ Synthesized grounded RCA hypotheses using precedent-based retrieval evidence. 
+ Implemented Critic Agent (LLM-as-a-Judge) with confidence thresholds and automatic retry to reduce weakly grounded 
+outputs. 
+Tech Stack: Python, LangGraph, LangChain, OpenAI API, ChromaDB, Grafana,Structured  Prompt Engineering, Multi-Agent Orchestration 
+Project RFP Bot — AI Proposal Assistant (POC)
+
+• Programming & Frameworks: Python, PyTorch, Hugging Face,Git,Bitbucket. 
+• NLP & ML: Transformers (GPT, LLaMA, Claude, Mistral,Embeddings, Search/Retrieval (BM25, Hybrid, Cross Encoders)  
+PYDI SAI RAKESH KORADA 
+ 
+ Professional Experience 
+ 
+Tata Consultancy Services (TCS) 
+Generative AI Engineer | Aug 2023 – Present 
+ 
+Project :OpsBuddy – GenAI-Powered Incident Recommendation System (Production) 
+ 
+Role: Generative AI Engineer 
+Description:
+
+Question:
+what is the tech stack of Project OpsBuddy?
+2026-06-24 22:12:16 [INFO] full answer==**Tech stack for OpsBuddy**
+
+| Category | Technologies / Tools |
+|----------|----------------------|
+| **Programming language** | Python |
+| **Frameworks / Libraries** | LangGraph, LangChain, OpenAI API |
+| **Vector store / Retrieval** | ChromaDB |
+| **Event‑driven ingestion** | AWS S3 → Lambda → OpenSearch (for the multimodal RAG pipeline) |
+| **Monitoring / Visualization** | Grafana |
+| **Prompt engineering** | Structured Prompt Engineering (custom templates & guardrails) |
+| **Agent orchestration** | Multi‑Agent Orchestration (including the Critic Agent) |
+| **Additional** | Structured Prompt Engineering, Multi‑Agent Orchestration, serverless architecture (AWS Lambda, S3, OpenSearch) |
+
+So OpsBuddy is built mainly on Python with LangGraph/LangChain for LLM orchestration, OpenAI API for the LLM, ChromaDB for vector storage, and an event‑driven serverless pipeline (S3 → Lambda → OpenSearch) to feed the multimodal Retrieval‑Augmented Generation (RAG) system, with Grafana for monitoring and structured prompt engineering for robust, grounded responses.
+2026-06-24 22:12:16 [INFO] In update_memory..
+2026-06-24 22:12:16 [INFO] In get_memory_messages
+2026-06-24 22:12:16 [INFO] In update_memory..after messages===[]
+2026-06-24 22:12:16 [INFO] In update_memory..after final messages===[HumanMessage(content='what is the tech stack of Project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='**Tech stack for OpsBuddy**\n\n| Category | Technologies / Tools |\n|----------|----------------------|\n| **Programming language** | Python |\n| **Frameworks / Libraries** | LangGraph, LangChain, OpenAI API |\n| **Vector store / Retrieval** | ChromaDB |\n| **Event‑driven ingestion** | AWS S3 → Lambda → OpenSearch (for the multimodal RAG pipeline) |\n| **Monitoring / Visualization** | Grafana |\n| **Prompt engineering** | Structured Prompt Engineering (custom templates & guardrails) |\n| **Agent orchestration** | Multi‑Agent Orchestration (including the Critic Agent) |\n| **Additional** | Structured Prompt Engineering, Multi‑Agent Orchestration, serverless architecture (AWS Lambda, S3, OpenSearch) |\n\nSo OpsBuddy is built mainly on Python with LangGraph/LangChain for LLM orchestration, OpenAI API for the LLM, ChromaDB for vector storage, and an event‑driven serverless pipeline (S3 → Lambda → OpenSearch) to feed the multimodal Retrieval‑Augmented Generation (RAG) system, with Grafana for monitoring and structured prompt engineering for robust, grounded responses.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
+2026-06-24 22:18:57 [INFO] This is print log printing in log file...........
+2026-06-24 22:18:57 [INFO] In inference............question===what is the vector DB used in this project?
+2026-06-24 22:18:57 [INFO] in retriever======
+2026-06-24 22:18:57 [INFO] None
+2026-06-24 22:18:57 [INFO] Before Chroma query
+2026-06-24 22:19:03 [INFO] after Chroma query
+2026-06-24 22:19:03 [INFO] results type = <class 'dict'>
+2026-06-24 22:19:03 [INFO] results keys = ['ids', 'embeddings', 'documents', 'uris', 'included', 'data', 'metadatas', 'distances']
+2026-06-24 22:19:03 [INFO] retrieved chunks = 15
+2026-06-24 22:19:03 [INFO] In inference.... before reranking
+2026-06-24 22:19:03 [INFO] In Rerank docs
+2026-06-24 22:19:03 [INFO] Retrieved 15 chunks
+2026-06-24 22:19:09 [INFO] In inference.... after reranking
+2026-06-24 22:19:09 [INFO] In inference.... before get context
+2026-06-24 22:19:09 [INFO] In inference.... after get context
+2026-06-24 22:19:09 [INFO] Claude, Mistral, LangChain, and LangGraph. 
+ Hands-on expertise in vector databases (ChromaDB, FAISS,Opensearch,S3 Vectors), prompt engineering (CoT, ToT, ReAct, 
+agents). 
+ Proficient in Python, PyTorch, Hugging Face, and FastAPI, with strong experience in cloud-based AI deployments (AWS), 
+containerization (Docker), and scalable integration of AI systems. 
+ Experience building end-to-end GenAI solutions beyond prototypes, including POCs, production deployments, evaluation
+
+ Implemented structured state propagation using shared JSON contracts for traceable inter-agent communication. 
+ Built vector-based rolling knowledge base (ChromaDB) with metadata filtering for time-bounded retrieval. 
+ Developed structured log parser extracting anomaly classes (Database, Network, Auth, Memory, Crash). 
+ Synthesized grounded RCA hypotheses using precedent-based retrieval evidence.
+
+architecture with auto-index on document upload and auto-purge on delete, processing 4,000+ enterprise documents and 
+eliminating 98% manual knowledge maintenance. 
+ Implemented rolling 6-month embedding lifecycle (EventBridge + Lambda) maintaining a knowledge base of 400K+ historical 
+incidents for real-time hybrid retrieval. 
+ Engineered hybrid retrieval (BM25 + vector) with cross-encoder reranking and parent-document retrieval, reducing context
+2026-06-24 22:19:09 [INFO] In inference....before fetching history
+2026-06-24 22:19:09 [INFO] In history_to_text
+2026-06-24 22:19:09 [INFO] In get_memory_messages
+2026-06-24 22:19:09 [INFO] In history_to_text after get memory messages...[HumanMessage(content='what is the tech stack of Project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='**Tech stack for OpsBuddy**\n\n| Category | Technologies / Tools |\n|----------|----------------------|\n| **Programming language** | Python |\n| **Frameworks / Libraries** | LangGraph, LangChain, OpenAI API |\n| **Vector store / Retrieval** | ChromaDB |\n| **Event‑driven ingestion** | AWS S3 → Lambda → OpenSearch (for the multimodal RAG pipeline) |\n| **Monitoring / Visualization** | Grafana |\n| **Prompt engineering** | Structured Prompt Engineering (custom templates & guardrails) |\n| **Agent orchestration** | Multi‑Agent Orchestration (including the Critic Agent) |\n| **Additional** | Structured Prompt Engineering, Multi‑Agent Orchestration, serverless architecture (AWS Lambda, S3, OpenSearch) |\n\nSo OpsBuddy is built mainly on Python with LangGraph/LangChain for LLM orchestration, OpenAI API for the LLM, ChromaDB for vector storage, and an event‑driven serverless pipeline (S3 → Lambda → OpenSearch) to feed the multimodal Retrieval‑Augmented Generation (RAG) system, with Grafana for monitoring and structured prompt engineering for robust, grounded responses.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
+2026-06-24 22:19:09 [INFO] In history_to_text after formatiing messages...['User: what is the tech stack of Project OpsBuddy?', 'Assistant: **Tech stack for OpsBuddy**\n\n| Category | Technologies / Tools |\n|----------|----------------------|\n| **Programming language** | Python |\n| **Frameworks / Libraries** | LangGraph, LangChain, OpenAI API |\n| **Vector store / Retrieval** | ChromaDB |\n| **Event‑driven ingestion** | AWS S3 → Lambda → OpenSearch (for the multimodal RAG pipeline) |\n| **Monitoring / Visualization** | Grafana |\n| **Prompt engineering** | Structured Prompt Engineering (custom templates & guardrails) |\n| **Agent orchestration** | Multi‑Agent Orchestration (including the Critic Agent) |\n| **Additional** | Structured Prompt Engineering, Multi‑Agent Orchestration, serverless architecture (AWS Lambda, S3, OpenSearch) |\n\nSo OpsBuddy is built mainly on Python with LangGraph/LangChain for LLM orchestration, OpenAI API for the LLM, ChromaDB for vector storage, and an event‑driven serverless pipeline (S3 → Lambda → OpenSearch) to feed the multimodal Retrieval‑Augmented Generation (RAG) system, with Grafana for monitoring and structured prompt engineering for robust, grounded responses.']
+2026-06-24 22:19:09 [INFO] In inference....before streaming llm history...User: what is the tech stack of Project OpsBuddy?
+Assistant: **Tech stack for OpsBuddy**
+
+| Category | Technologies / Tools |
+|----------|----------------------|
+| **Programming language** | Python |
+| **Frameworks / Libraries** | LangGraph, LangChain, OpenAI API |
+| **Vector store / Retrieval** | ChromaDB |
+| **Event‑driven ingestion** | AWS S3 → Lambda → OpenSearch (for the multimodal RAG pipeline) |
+| **Monitoring / Visualization** | Grafana |
+| **Prompt engineering** | Structured Prompt Engineering (custom templates & guardrails) |
+| **Agent orchestration** | Multi‑Agent Orchestration (including the Critic Agent) |
+| **Additional** | Structured Prompt Engineering, Multi‑Agent Orchestration, serverless architecture (AWS Lambda, S3, OpenSearch) |
+
+So OpsBuddy is built mainly on Python with LangGraph/LangChain for LLM orchestration, OpenAI API for the LLM, ChromaDB for vector storage, and an event‑driven serverless pipeline (S3 → Lambda → OpenSearch) to feed the multimodal Retrieval‑Augmented Generation (RAG) system, with Grafana for monitoring and structured prompt engineering for robust, grounded responses.
+2026-06-24 22:19:09 [INFO] in stream llm response
+2026-06-24 22:19:09 [INFO] prompt
+2026-06-24 22:19:09 [INFO] prompt==You are a helpful and conversational assistant. Answer the user's question based on the provided Context and our ongoing Conversation History.
+
+How to handle the information:
+- Use the Conversation History to understand what the user is referring to (like pronouns or previous topics).
+- Rely on the provided Context to give accurate answers. 
+- If the context simply doesn't contain the answer, kindly let the user know by saying: "I am sorry, I don't know."
+If the answer is not present in the context,
+respond with:
+
+"I am sorry, I don't know."
+
+Do not use external knowledge.
+
+Conversation History:
+User: what is the tech stack of Project OpsBuddy?
+Assistant: **Tech stack for OpsBuddy**
+
+| Category | Technologies / Tools |
+|----------|----------------------|
+| **Programming language** | Python |
+| **Frameworks / Libraries** | LangGraph, LangChain, OpenAI API |
+| **Vector store / Retrieval** | ChromaDB |
+| **Event‑driven ingestion** | AWS S3 → Lambda → OpenSearch (for the multimodal RAG pipeline) |
+| **Monitoring / Visualization** | Grafana |
+| **Prompt engineering** | Structured Prompt Engineering (custom templates & guardrails) |
+| **Agent orchestration** | Multi‑Agent Orchestration (including the Critic Agent) |
+| **Additional** | Structured Prompt Engineering, Multi‑Agent Orchestration, serverless architecture (AWS Lambda, S3, OpenSearch) |
+
+So OpsBuddy is built mainly on Python with LangGraph/LangChain for LLM orchestration, OpenAI API for the LLM, ChromaDB for vector storage, and an event‑driven serverless pipeline (S3 → Lambda → OpenSearch) to feed the multimodal Retrieval‑Augmented Generation (RAG) system, with Grafana for monitoring and structured prompt engineering for robust, grounded responses.
+
+Context:
+Claude, Mistral, LangChain, and LangGraph. 
+ Hands-on expertise in vector databases (ChromaDB, FAISS,Opensearch,S3 Vectors), prompt engineering (CoT, ToT, ReAct, 
+agents). 
+ Proficient in Python, PyTorch, Hugging Face, and FastAPI, with strong experience in cloud-based AI deployments (AWS), 
+containerization (Docker), and scalable integration of AI systems. 
+ Experience building end-to-end GenAI solutions beyond prototypes, including POCs, production deployments, evaluation
+
+ Implemented structured state propagation using shared JSON contracts for traceable inter-agent communication. 
+ Built vector-based rolling knowledge base (ChromaDB) with metadata filtering for time-bounded retrieval. 
+ Developed structured log parser extracting anomaly classes (Database, Network, Auth, Memory, Crash). 
+ Synthesized grounded RCA hypotheses using precedent-based retrieval evidence.
+
+architecture with auto-index on document upload and auto-purge on delete, processing 4,000+ enterprise documents and 
+eliminating 98% manual knowledge maintenance. 
+ Implemented rolling 6-month embedding lifecycle (EventBridge + Lambda) maintaining a knowledge base of 400K+ historical 
+incidents for real-time hybrid retrieval. 
+ Engineered hybrid retrieval (BM25 + vector) with cross-encoder reranking and parent-document retrieval, reducing context
+
+Question:
+what is the vector DB used in this project?
+2026-06-24 22:19:11 [INFO] full answer==The project uses **ChromaDB** as its vector database.
+2026-06-24 22:19:11 [INFO] In update_memory..
+2026-06-24 22:19:11 [INFO] In get_memory_messages
+2026-06-24 22:19:11 [INFO] In update_memory..after messages===[HumanMessage(content='what is the tech stack of Project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='**Tech stack for OpsBuddy**\n\n| Category | Technologies / Tools |\n|----------|----------------------|\n| **Programming language** | Python |\n| **Frameworks / Libraries** | LangGraph, LangChain, OpenAI API |\n| **Vector store / Retrieval** | ChromaDB |\n| **Event‑driven ingestion** | AWS S3 → Lambda → OpenSearch (for the multimodal RAG pipeline) |\n| **Monitoring / Visualization** | Grafana |\n| **Prompt engineering** | Structured Prompt Engineering (custom templates & guardrails) |\n| **Agent orchestration** | Multi‑Agent Orchestration (including the Critic Agent) |\n| **Additional** | Structured Prompt Engineering, Multi‑Agent Orchestration, serverless architecture (AWS Lambda, S3, OpenSearch) |\n\nSo OpsBuddy is built mainly on Python with LangGraph/LangChain for LLM orchestration, OpenAI API for the LLM, ChromaDB for vector storage, and an event‑driven serverless pipeline (S3 → Lambda → OpenSearch) to feed the multimodal Retrieval‑Augmented Generation (RAG) system, with Grafana for monitoring and structured prompt engineering for robust, grounded responses.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
+2026-06-24 22:19:11 [INFO] In update_memory..after final messages===[HumanMessage(content='what is the tech stack of Project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='**Tech stack for OpsBuddy**\n\n| Category | Technologies / Tools |\n|----------|----------------------|\n| **Programming language** | Python |\n| **Frameworks / Libraries** | LangGraph, LangChain, OpenAI API |\n| **Vector store / Retrieval** | ChromaDB |\n| **Event‑driven ingestion** | AWS S3 → Lambda → OpenSearch (for the multimodal RAG pipeline) |\n| **Monitoring / Visualization** | Grafana |\n| **Prompt engineering** | Structured Prompt Engineering (custom templates & guardrails) |\n| **Agent orchestration** | Multi‑Agent Orchestration (including the Critic Agent) |\n| **Additional** | Structured Prompt Engineering, Multi‑Agent Orchestration, serverless architecture (AWS Lambda, S3, OpenSearch) |\n\nSo OpsBuddy is built mainly on Python with LangGraph/LangChain for LLM orchestration, OpenAI API for the LLM, ChromaDB for vector storage, and an event‑driven serverless pipeline (S3 → Lambda → OpenSearch) to feed the multimodal Retrieval‑Augmented Generation (RAG) system, with Grafana for monitoring and structured prompt engineering for robust, grounded responses.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[]), HumanMessage(content='what is the vector DB used in this project?', additional_kwargs={}, response_metadata={}), AIMessage(content='The project uses **ChromaDB** as its vector database.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
+
+
+-------------------------------------------------------------------------------------------------------------
+2026-06-25 21:50:51 [INFO] This is print log printing in log file...........
+2026-06-25 21:51:00 [INFO] In inference............question===what is the impact of project OpsBuddy?
+2026-06-25 21:51:00 [INFO] In inference....before fetching history
+2026-06-25 21:51:00 [INFO] In history_to_text
+2026-06-25 21:51:00 [INFO] In get_memory_messages
+2026-06-25 21:51:00 [INFO] In history_to_text after get memory messages...[]
+2026-06-25 21:51:00 [INFO] In inference....after fetching history...No previous conversation.
+2026-06-25 21:51:00 [INFO] in is Follow up method
+2026-06-25 21:51:01 [INFO] result======content='NO' additional_kwargs={'reasoning_content': 'We need to determine if the question "what is the impact of project OpsBuddy?" can be answered using only the information provided in the conversation history. The conversation history is empty: "No previous conversation." So there\'s no info about project OpsBuddy. So we cannot answer. According to criteria, reply "NO".'} response_metadata={'finish_reason': 'stop', 'model_name': 'openai/gpt-oss-20b', 'system_fingerprint': 'fp_8b41efc9a3', 'service_tier': 'on_demand', 'model_provider': 'groq'} id='lc_run--019eff95-b10f-73b1-9089-8f32dfaebaf5' tool_calls=[] invalid_tool_calls=[] usage_metadata={'input_tokens': 223, 'output_tokens': 74, 'total_tokens': 297, 'output_token_details': {'reasoning': 64}}
+2026-06-25 21:51:01 [INFO] In inference....after getting intent====NO
+2026-06-25 21:51:01 [INFO] in retriever======
+2026-06-25 21:51:01 [INFO] None
+2026-06-25 21:51:01 [INFO] Before Chroma query
+2026-06-25 21:51:03 [INFO] after Chroma query
+2026-06-25 21:51:03 [INFO] results type = <class 'dict'>
+2026-06-25 21:51:03 [INFO] results keys = ['ids', 'embeddings', 'documents', 'uris', 'included', 'data', 'metadatas', 'distances']
+2026-06-25 21:51:03 [INFO] retrieved chunks = 15
+2026-06-25 21:51:03 [INFO] In inference.... before reranking
+2026-06-25 21:51:03 [INFO] In Rerank docs
+2026-06-25 21:51:03 [INFO] Retrieved 15 chunks
+2026-06-25 21:51:04 [INFO] In inference.... after reranking
+2026-06-25 21:51:04 [INFO] In inference.... before get context
+2026-06-25 21:51:04 [INFO] In inference.... after get context
+2026-06-25 21:51:04 [INFO] Role: Generative AI Engineer 
+Description: 
+Developed OpsBuddy, a persona-based AI assistant for IT Operations taken from POC to production for a leading retail client at TCS empowering 
+L2 support engineers to instantly understand the incident details, identify root causes(RCA), recommend resolutions and generate answers for 
+key operational metrics.  
+Key Contributions: 
+ Architected event-driven serverless Knowledge ingestion pipeline (S3 → Lambda → OpenSearch) powering a Multimodal RAG
+
+• Programming & Frameworks: Python, PyTorch, Hugging Face,Git,Bitbucket. 
+• NLP & ML: Transformers (GPT, LLaMA, Claude, Mistral,Embeddings, Search/Retrieval (BM25, Hybrid, Cross Encoders)  
+PYDI SAI RAKESH KORADA 
+ 
+ Professional Experience 
+ 
+Tata Consultancy Services (TCS) 
+Generative AI Engineer | Aug 2023 – Present 
+ 
+Project :OpsBuddy – GenAI-Powered Incident Recommendation System (Production) 
+ 
+Role: Generative AI Engineer 
+Description:
+
+precision 0.65 → 0.86. 
+Impact 
+ Reduced manual support effort by ~100 hours/week. 
+ Decreased MTTR by ~40% and shortened onboarding time by 2 weeks. 
+ Delivered enterprise-safe, production-ready GenAI system used for real-time incident resolution support. 
+Tech Stack: 
+Python, FastAPI,pydantic,LangChain, Claude Sonnet 3.5 & 3.7 (AWS Bedrock), Amazon Titan V1 Embeddings, OpenSearch Serverless, BM25, Cross -
+2026-06-25 21:51:04 [INFO] in stream llm response
+2026-06-25 21:51:04 [INFO] prompt
+2026-06-25 21:51:04 [INFO] prompt==You are a helpful and conversational assistant. Answer the user's question based on the provided Context and our ongoing Conversation History.
+
+How to handle the information:
+- Use the Conversation History to understand what the user is referring to (like pronouns or previous topics).
+- Rely on the provided Context to give accurate answers. 
+- If the context simply doesn't contain the answer, kindly let the user know by saying: "I am sorry, I don't know."
+If the answer is not present in the context,
+respond with:
+
+"I am sorry, I don't know."
+
+Do not use external knowledge.
+
+Conversation History:
+No previous conversation.
+
+Context:
+Role: Generative AI Engineer 
+Description: 
+Developed OpsBuddy, a persona-based AI assistant for IT Operations taken from POC to production for a leading retail client at TCS empowering 
+L2 support engineers to instantly understand the incident details, identify root causes(RCA), recommend resolutions and generate answers for 
+key operational metrics.  
+Key Contributions: 
+ Architected event-driven serverless Knowledge ingestion pipeline (S3 → Lambda → OpenSearch) powering a Multimodal RAG
+
+• Programming & Frameworks: Python, PyTorch, Hugging Face,Git,Bitbucket. 
+• NLP & ML: Transformers (GPT, LLaMA, Claude, Mistral,Embeddings, Search/Retrieval (BM25, Hybrid, Cross Encoders)  
+PYDI SAI RAKESH KORADA 
+ 
+ Professional Experience 
+ 
+Tata Consultancy Services (TCS) 
+Generative AI Engineer | Aug 2023 – Present 
+ 
+Project :OpsBuddy – GenAI-Powered Incident Recommendation System (Production) 
+ 
+Role: Generative AI Engineer 
+Description:
+
+precision 0.65 → 0.86. 
+Impact 
+ Reduced manual support effort by ~100 hours/week. 
+ Decreased MTTR by ~40% and shortened onboarding time by 2 weeks. 
+ Delivered enterprise-safe, production-ready GenAI system used for real-time incident resolution support. 
+Tech Stack: 
+Python, FastAPI,pydantic,LangChain, Claude Sonnet 3.5 & 3.7 (AWS Bedrock), Amazon Titan V1 Embeddings, OpenSearch Serverless, BM25, Cross -
+
+Question:
+what is the impact of project OpsBuddy?
+
+2026-06-25 21:51:06 [INFO] full answer==The OpsBuddy project delivered several measurable benefits:
+
+- **Reduced manual support effort** by roughly **100 hours per week**.  
+- **Decreased Mean Time To Resolve (MTTR)** by about **40 %**.  
+- **Shortened onboarding time** for new support engineers by **2 weeks**.  
+- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.
+2026-06-25 21:51:06 [INFO] In update_memory..
+2026-06-25 21:51:06 [INFO] In get_memory_messages
+2026-06-25 21:51:06 [INFO] In update_memory..after messages===[]
+2026-06-25 21:51:06 [INFO] In update_memory..after final messages===[HumanMessage(content='what is the impact of project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='The OpsBuddy project delivered several measurable benefits:\n\n- **Reduced manual support effort** by roughly **100 hours per week**.  \n- **Decreased Mean Time To Resolve (MTTR)** by about **40\u202f%**.  \n- **Shortened onboarding time** for new support engineers by **2 weeks**.  \n- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
+-----------------------------------------------------------
+2026-06-25 21:55:26 [INFO] This is print log printing in log file...........
+2026-06-25 21:55:26 [INFO] In inference............question===Manual support reduced by How many hours per week ?
+2026-06-25 21:55:26 [INFO] In inference....before fetching history
+2026-06-25 21:55:26 [INFO] In history_to_text
+2026-06-25 21:55:26 [INFO] In get_memory_messages
+2026-06-25 21:55:26 [INFO] In history_to_text after get memory messages...[HumanMessage(content='what is the impact of project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='The OpsBuddy project delivered several measurable benefits:\n\n- **Reduced manual support effort** by roughly **100 hours per week**.  \n- **Decreased Mean Time To Resolve (MTTR)** by about **40\u202f%**.  \n- **Shortened onboarding time** for new support engineers by **2 weeks**.  \n- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
+2026-06-25 21:55:26 [INFO] In history_to_text after formatiing messages...['User: what is the impact of project OpsBuddy?', 'Assistant: The OpsBuddy project delivered several measurable benefits:\n\n- **Reduced manual support effort** by roughly **100 hours per week**.  \n- **Decreased Mean Time To Resolve (MTTR)** by about **40\u202f%**.  \n- **Shortened onboarding time** for new support engineers by **2 weeks**.  \n- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.']
+2026-06-25 21:55:26 [INFO] In inference....after fetching history...User: what is the impact of project OpsBuddy?
+Assistant: The OpsBuddy project delivered several measurable benefits:
+
+- **Reduced manual support effort** by roughly **100 hours per week**.  
+- **Decreased Mean Time To Resolve (MTTR)** by about **40 %**.  
+- **Shortened onboarding time** for new support engineers by **2 weeks**.  
+- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.
+2026-06-25 21:55:26 [INFO] in is Follow up method
+2026-06-25 21:55:27 [INFO] result======content='YES' additional_kwargs={'reasoning_content': 'We need to check if the question "Manual support reduced by How many hours per week ?" can be answered using the conversation history.\n\nThe history includes: "Reduced manual support effort by roughly 100 hours per week." That is the exact answer. So we can answer.\n\nThus reply "YES".'} response_metadata={'finish_reason': 'stop', 'model_name': 'openai/gpt-oss-20b', 'system_fingerprint': 'fp_d23c14756c', 'service_tier': 'on_demand', 'model_provider': 'groq'} id='lc_run--019eff99-bfd0-7290-b246-509562717442' tool_calls=[] invalid_tool_calls=[] usage_metadata={'input_tokens': 322, 'output_tokens': 70, 'total_tokens': 392, 'output_token_details': {'reasoning': 60}}
+2026-06-25 21:55:27 [INFO] In inference....after getting intent====YES
+2026-06-25 21:55:27 [INFO] In inference.... after get context
+2026-06-25 21:55:27 [INFO] User: what is the impact of project OpsBuddy?
+Assistant: The OpsBuddy project delivered several measurable benefits:
+
+- **Reduced manual support effort** by roughly **100 hours per week**.  
+- **Decreased Mean Time To Resolve (MTTR)** by about **40 %**.  
+- **Shortened onboarding time** for new support engineers by **2 weeks**.  
+- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.
+2026-06-25 21:55:27 [INFO] in stream llm response
+2026-06-25 21:55:27 [INFO] prompt
+2026-06-25 21:55:27 [INFO] prompt==You are a helpful and conversational assistant. Answer the user's question based on the provided Context and our ongoing Conversation History.
+
+How to handle the information:
+- Use the Conversation History to understand what the user is referring to (like pronouns or previous topics).
+- Rely on the provided Context to give accurate answers. 
+- If the context simply doesn't contain the answer, kindly let the user know by saying: "I am sorry, I don't know."
+If the answer is not present in the context,
+respond with:
+
+"I am sorry, I don't know."
+
+Do not use external knowledge.
+
+Conversation History:
+User: what is the impact of project OpsBuddy?
+Assistant: The OpsBuddy project delivered several measurable benefits:
+
+- **Reduced manual support effort** by roughly **100 hours per week**.  
+- **Decreased Mean Time To Resolve (MTTR)** by about **40 %**.  
+- **Shortened onboarding time** for new support engineers by **2 weeks**.  
+- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.
+
+Context:
+User: what is the impact of project OpsBuddy?
+Assistant: The OpsBuddy project delivered several measurable benefits:
+
+- **Reduced manual support effort** by roughly **100 hours per week**.  
+- **Decreased Mean Time To Resolve (MTTR)** by about **40 %**.  
+- **Shortened onboarding time** for new support engineers by **2 weeks**.  
+- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.
+
+Question:
+Manual support reduced by How many hours per week ?
+
+2026-06-25 21:55:27 [INFO] full answer==The manual support effort was reduced by roughly **100 hours per week**.
+2026-06-25 21:55:27 [INFO] In update_memory..
+2026-06-25 21:55:27 [INFO] In get_memory_messages
+2026-06-25 21:55:27 [INFO] In update_memory..after messages===[HumanMessage(content='what is the impact of project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='The OpsBuddy project delivered several measurable benefits:\n\n- **Reduced manual support effort** by roughly **100 hours per week**.  \n- **Decreased Mean Time To Resolve (MTTR)** by about **40\u202f%**.  \n- **Shortened onboarding time** for new support engineers by **2 weeks**.  \n- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
+2026-06-25 21:55:27 [INFO] In update_memory..after final messages===[HumanMessage(content='what is the impact of project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='The OpsBuddy project delivered several measurable benefits:\n\n- **Reduced manual support effort** by roughly **100 hours per week**.  \n- **Decreased Mean Time To Resolve (MTTR)** by about **40\u202f%**.  \n- **Shortened onboarding time** for new support engineers by **2 weeks**.  \n- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[]), HumanMessage(content='Manual support reduced by How many hours per week ?', additional_kwargs={}, response_metadata={}), AIMessage(content='The manual support effort was reduced by roughly **100 hours per week**.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
+
+------------------------------------------------------------------------------------
+2026-06-25 21:57:49 [INFO] This is print log printing in log file...........
+2026-06-25 21:57:49 [INFO] In inference............question===what is the tech stack of project Ops Buddy?
+2026-06-25 21:57:49 [INFO] In inference....before fetching history
+2026-06-25 21:57:49 [INFO] In history_to_text
+2026-06-25 21:57:49 [INFO] In get_memory_messages
+2026-06-25 21:57:49 [INFO] In history_to_text after get memory messages...[HumanMessage(content='what is the impact of project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='The OpsBuddy project delivered several measurable benefits:\n\n- **Reduced manual support effort** by roughly **100 hours per week**.  \n- **Decreased Mean Time To Resolve (MTTR)** by about **40\u202f%**.  \n- **Shortened onboarding time** for new support engineers by **2 weeks**.  \n- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[]), HumanMessage(content='Manual support reduced by How many hours per week ?', additional_kwargs={}, response_metadata={}), AIMessage(content='The manual support effort was reduced by roughly **100 hours per week**.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
+2026-06-25 21:57:49 [INFO] In history_to_text after formatiing messages...['User: what is the impact of project OpsBuddy?', 'Assistant: The OpsBuddy project delivered several measurable benefits:\n\n- **Reduced manual support effort** by roughly **100 hours per week**.  \n- **Decreased Mean Time To Resolve (MTTR)** by about **40\u202f%**.  \n- **Shortened onboarding time** for new support engineers by **2 weeks**.  \n- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.', 'User: Manual support reduced by How many hours per week ?', 'Assistant: The manual support effort was reduced by roughly **100 hours per week**.']
+2026-06-25 21:57:49 [INFO] In inference....after fetching history...User: what is the impact of project OpsBuddy?
+Assistant: The OpsBuddy project delivered several measurable benefits:
+
+- **Reduced manual support effort** by roughly **100 hours per week**.  
+- **Decreased Mean Time To Resolve (MTTR)** by about **40 %**.  
+- **Shortened onboarding time** for new support engineers by **2 weeks**.  
+- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.
+User: Manual support reduced by How many hours per week ?
+Assistant: The manual support effort was reduced by roughly **100 hours per week**.
+2026-06-25 21:57:49 [INFO] in is Follow up method
+2026-06-25 21:57:50 [INFO] result======content='NO' additional_kwargs={'reasoning_content': 'We need to determine if the conversation history contains the answer to "what is the tech stack of project Ops Buddy?" The conversation history includes:\n\nUser: what is the impact of project OpsBuddy?\nAssistant: The OpsBuddy project delivered several measurable benefits: ... list.\n\nUser: Manual support reduced by How many hours per week ?\nAssistant: The manual support effort was reduced by roughly 100 hours per week.\n\nCurrent question: what is the tech stack of project Ops Buddy?\n\nWe need to check if the conversation history contains the answer. The conversation history does not mention the tech stack. So answer "NO".\n\nThus reply: NO.'} response_metadata={'finish_reason': 'stop', 'model_name': 'openai/gpt-oss-20b', 'system_fingerprint': 'fp_1c0f5282a2', 'service_tier': 'on_demand', 'model_provider': 'groq'} id='lc_run--019eff9b-ee14-74e1-97bc-b93db1e199b4' tool_calls=[] invalid_tool_calls=[] usage_metadata={'input_tokens': 351, 'output_tokens': 137, 'total_tokens': 488, 'output_token_details': {'reasoning': 127}}
+2026-06-25 21:57:50 [INFO] In inference....after getting intent====NO
+2026-06-25 21:57:50 [INFO] in retriever======
+2026-06-25 21:57:50 [INFO] None
+2026-06-25 21:57:50 [INFO] Before Chroma query
+2026-06-25 21:57:51 [INFO] after Chroma query
+2026-06-25 21:57:51 [INFO] results type = <class 'dict'>
+2026-06-25 21:57:51 [INFO] results keys = ['ids', 'embeddings', 'documents', 'uris', 'included', 'data', 'metadatas', 'distances']
+2026-06-25 21:57:51 [INFO] retrieved chunks = 15
+2026-06-25 21:57:51 [INFO] In inference.... before reranking
+2026-06-25 21:57:51 [INFO] In Rerank docs
+2026-06-25 21:57:51 [INFO] Retrieved 15 chunks
+2026-06-25 21:57:52 [INFO] In inference.... after reranking
+2026-06-25 21:57:52 [INFO] In inference.... before get context
+2026-06-25 21:57:52 [INFO] In inference.... after get context
+2026-06-25 21:57:52 [INFO]  Synthesized grounded RCA hypotheses using precedent-based retrieval evidence. 
+ Implemented Critic Agent (LLM-as-a-Judge) with confidence thresholds and automatic retry to reduce weakly grounded 
+outputs. 
+Tech Stack: Python, LangGraph, LangChain, OpenAI API, ChromaDB, Grafana,Structured  Prompt Engineering, Multi-Agent Orchestration 
+Project RFP Bot — AI Proposal Assistant (POC)
+
+precision 0.65 → 0.86. 
+Impact 
+ Reduced manual support effort by ~100 hours/week. 
+ Decreased MTTR by ~40% and shortened onboarding time by 2 weeks. 
+ Delivered enterprise-safe, production-ready GenAI system used for real-time incident resolution support. 
+Tech Stack: 
+Python, FastAPI,pydantic,LangChain, Claude Sonnet 3.5 & 3.7 (AWS Bedrock), Amazon Titan V1 Embeddings, OpenSearch Serverless, BM25, Cross -
+
+Role: Generative AI Engineer 
+Description: 
+Developed OpsBuddy, a persona-based AI assistant for IT Operations taken from POC to production for a leading retail client at TCS empowering 
+L2 support engineers to instantly understand the incident details, identify root causes(RCA), recommend resolutions and generate answers for 
+key operational metrics.  
+Key Contributions: 
+ Architected event-driven serverless Knowledge ingestion pipeline (S3 → Lambda → OpenSearch) powering a Multimodal RAG
+2026-06-25 21:57:52 [INFO] in stream llm response
+2026-06-25 21:57:52 [INFO] prompt
+2026-06-25 21:57:52 [INFO] prompt==You are a helpful and conversational assistant. Answer the user's question based on the provided Context and our ongoing Conversation History.
+
+How to handle the information:
+- Use the Conversation History to understand what the user is referring to (like pronouns or previous topics).
+- Rely on the provided Context to give accurate answers. 
+- If the context simply doesn't contain the answer, kindly let the user know by saying: "I am sorry, I don't know."
+If the answer is not present in the context,
+respond with:
+
+"I am sorry, I don't know."
+
+Do not use external knowledge.
+
+Conversation History:
+User: what is the impact of project OpsBuddy?
+Assistant: The OpsBuddy project delivered several measurable benefits:
+
+- **Reduced manual support effort** by roughly **100 hours per week**.  
+- **Decreased Mean Time To Resolve (MTTR)** by about **40 %**.  
+- **Shortened onboarding time** for new support engineers by **2 weeks**.  
+- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.
+User: Manual support reduced by How many hours per week ?
+Assistant: The manual support effort was reduced by roughly **100 hours per week**.
+
+Context:
+ Synthesized grounded RCA hypotheses using precedent-based retrieval evidence. 
+ Implemented Critic Agent (LLM-as-a-Judge) with confidence thresholds and automatic retry to reduce weakly grounded 
+outputs. 
+Tech Stack: Python, LangGraph, LangChain, OpenAI API, ChromaDB, Grafana,Structured  Prompt Engineering, Multi-Agent Orchestration 
+Project RFP Bot — AI Proposal Assistant (POC)
+
+precision 0.65 → 0.86. 
+Impact 
+ Reduced manual support effort by ~100 hours/week. 
+ Decreased MTTR by ~40% and shortened onboarding time by 2 weeks. 
+ Delivered enterprise-safe, production-ready GenAI system used for real-time incident resolution support. 
+Tech Stack: 
+Python, FastAPI,pydantic,LangChain, Claude Sonnet 3.5 & 3.7 (AWS Bedrock), Amazon Titan V1 Embeddings, OpenSearch Serverless, BM25, Cross -
+
+Role: Generative AI Engineer 
+Description: 
+Developed OpsBuddy, a persona-based AI assistant for IT Operations taken from POC to production for a leading retail client at TCS empowering 
+L2 support engineers to instantly understand the incident details, identify root causes(RCA), recommend resolutions and generate answers for 
+key operational metrics.  
+Key Contributions: 
+ Architected event-driven serverless Knowledge ingestion pipeline (S3 → Lambda → OpenSearch) powering a Multimodal RAG
+
+Question:
+what is the tech stack of project Ops Buddy?
+
+2026-06-25 21:57:56 [INFO] full answer==**OpsBuddy tech stack (as listed in the context)**  
+
+| Category | Components |
+|----------|------------|
+| **Core language & framework** | Python, FastAPI, Pydantic |
+| **LLM & embeddings** | Claude Sonnet 3.5 & 3.7 (AWS Bedrock), Amazon Titan V1 Embeddings |
+| **RAG & retrieval** | OpenSearch Serverless, BM25, Cross‑embedding retrieval |
+| **Agent orchestration & RAG tooling** | LangChain, LangGraph, Multi‑Agent Orchestration |
+| **Data storage & retrieval** | ChromaDB |
+| **APIs & services** | OpenAI API |
+| **Monitoring & observability** | Grafana |
+| **Prompt engineering** | Structured Prompt Engineering |
+
+These components together enable the event‑driven serverless knowledge ingestion pipeline and the persona‑based AI assistant that powers OpsBuddy.
+2026-06-25 21:57:56 [INFO] In update_memory..
+2026-06-25 21:57:56 [INFO] In get_memory_messages
+2026-06-25 21:57:56 [INFO] In update_memory..after messages===[HumanMessage(content='what is the impact of project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='The OpsBuddy project delivered several measurable benefits:\n\n- **Reduced manual support effort** by roughly **100 hours per week**.  \n- **Decreased Mean Time To Resolve (MTTR)** by about **40\u202f%**.  \n- **Shortened onboarding time** for new support engineers by **2 weeks**.  \n- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[]), HumanMessage(content='Manual support reduced by How many hours per week ?', additional_kwargs={}, response_metadata={}), AIMessage(content='The manual support effort was reduced by roughly **100 hours per week**.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
+2026-06-25 21:57:56 [INFO] In update_memory..after final messages===[HumanMessage(content='what is the impact of project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='The OpsBuddy project delivered several measurable benefits:\n\n- **Reduced manual support effort** by roughly **100 hours per week**.  \n- **Decreased Mean Time To Resolve (MTTR)** by about **40\u202f%**.  \n- **Shortened onboarding time** for new support engineers by **2 weeks**.  \n- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[]), HumanMessage(content='Manual support reduced by How many hours per week ?', additional_kwargs={}, response_metadata={}), AIMessage(content='The manual support effort was reduced by roughly **100 hours per week**.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[]), HumanMessage(content='what is the tech stack of project Ops Buddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='**OpsBuddy tech stack (as listed in the context)**  \n\n| Category | Components |\n|----------|------------|\n| **Core language & framework** | Python, FastAPI, Pydantic |\n| **LLM & embeddings** | Claude Sonnet\u202f3.5 &\u202f3.7 (AWS\u202fBedrock), Amazon\u202fTitan\u202fV1 Embeddings |\n| **RAG & retrieval** | OpenSearch\u202fServerless, BM25, Cross‑embedding retrieval |\n| **Agent orchestration & RAG tooling** | LangChain, LangGraph, Multi‑Agent Orchestration |\n| **Data storage & retrieval** | ChromaDB |\n| **APIs & services** | OpenAI API |\n| **Monitoring & observability** | Grafana |\n| **Prompt engineering** | Structured Prompt Engineering |\n\nThese components together enable the event‑driven serverless knowledge ingestion pipeline and the persona‑based AI assistant that powers OpsBuddy.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
+
+---------------------------------------------------------------------------------------------------------
+2026-06-25 21:59:36 [INFO] This is print log printing in log file...........
+2026-06-25 21:59:36 [INFO] In inference............question===Mean Time To Resolve (MTTR) is decreased by how much percentage?
+2026-06-25 21:59:36 [INFO] In inference....before fetching history
+2026-06-25 21:59:36 [INFO] In history_to_text
+2026-06-25 21:59:36 [INFO] In get_memory_messages
+2026-06-25 21:59:36 [INFO] In history_to_text after get memory messages...[HumanMessage(content='what is the impact of project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='The OpsBuddy project delivered several measurable benefits:\n\n- **Reduced manual support effort** by roughly **100 hours per week**.  \n- **Decreased Mean Time To Resolve (MTTR)** by about **40\u202f%**.  \n- **Shortened onboarding time** for new support engineers by **2 weeks**.  \n- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[]), HumanMessage(content='Manual support reduced by How many hours per week ?', additional_kwargs={}, response_metadata={}), AIMessage(content='The manual support effort was reduced by roughly **100 hours per week**.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[]), HumanMessage(content='what is the tech stack of project Ops Buddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='**OpsBuddy tech stack (as listed in the context)**  \n\n| Category | Components |\n|----------|------------|\n| **Core language & framework** | Python, FastAPI, Pydantic |\n| **LLM & embeddings** | Claude Sonnet\u202f3.5 &\u202f3.7 (AWS\u202fBedrock), Amazon\u202fTitan\u202fV1 Embeddings |\n| **RAG & retrieval** | OpenSearch\u202fServerless, BM25, Cross‑embedding retrieval |\n| **Agent orchestration & RAG tooling** | LangChain, LangGraph, Multi‑Agent Orchestration |\n| **Data storage & retrieval** | ChromaDB |\n| **APIs & services** | OpenAI API |\n| **Monitoring & observability** | Grafana |\n| **Prompt engineering** | Structured Prompt Engineering |\n\nThese components together enable the event‑driven serverless knowledge ingestion pipeline and the persona‑based AI assistant that powers OpsBuddy.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
+2026-06-25 21:59:36 [INFO] In history_to_text after formatiing messages...['User: what is the impact of project OpsBuddy?', 'Assistant: The OpsBuddy project delivered several measurable benefits:\n\n- **Reduced manual support effort** by roughly **100 hours per week**.  \n- **Decreased Mean Time To Resolve (MTTR)** by about **40\u202f%**.  \n- **Shortened onboarding time** for new support engineers by **2 weeks**.  \n- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.', 'User: Manual support reduced by How many hours per week ?', 'Assistant: The manual support effort was reduced by roughly **100 hours per week**.', 'User: what is the tech stack of project Ops Buddy?', 'Assistant: **OpsBuddy tech stack (as listed in the context)**  \n\n| Category | Components |\n|----------|------------|\n| **Core language & framework** | Python, FastAPI, Pydantic |\n| **LLM & embeddings** | Claude Sonnet\u202f3.5 &\u202f3.7 (AWS\u202fBedrock), Amazon\u202fTitan\u202fV1 Embeddings |\n| **RAG & retrieval** | OpenSearch\u202fServerless, BM25, Cross‑embedding retrieval |\n| **Agent orchestration & RAG tooling** | LangChain, LangGraph, Multi‑Agent Orchestration |\n| **Data storage & retrieval** | ChromaDB |\n| **APIs & services** | OpenAI API |\n| **Monitoring & observability** | Grafana |\n| **Prompt engineering** | Structured Prompt Engineering |\n\nThese components together enable the event‑driven serverless knowledge ingestion pipeline and the persona‑based AI assistant that powers OpsBuddy.']
+2026-06-25 21:59:36 [INFO] In inference....after fetching history...User: what is the impact of project OpsBuddy?
+Assistant: The OpsBuddy project delivered several measurable benefits:
+
+- **Reduced manual support effort** by roughly **100 hours per week**.  
+- **Decreased Mean Time To Resolve (MTTR)** by about **40 %**.  
+- **Shortened onboarding time** for new support engineers by **2 weeks**.  
+- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.
+User: Manual support reduced by How many hours per week ?
+Assistant: The manual support effort was reduced by roughly **100 hours per week**.
+User: what is the tech stack of project Ops Buddy?
+Assistant: **OpsBuddy tech stack (as listed in the context)**  
+
+| Category | Components |
+|----------|------------|
+| **Core language & framework** | Python, FastAPI, Pydantic |
+| **LLM & embeddings** | Claude Sonnet 3.5 & 3.7 (AWS Bedrock), Amazon Titan V1 Embeddings |
+| **RAG & retrieval** | OpenSearch Serverless, BM25, Cross‑embedding retrieval |
+| **Agent orchestration & RAG tooling** | LangChain, LangGraph, Multi‑Agent Orchestration |
+| **Data storage & retrieval** | ChromaDB |
+| **APIs & services** | OpenAI API |
+| **Monitoring & observability** | Grafana |
+| **Prompt engineering** | Structured Prompt Engineering |
+
+These components together enable the event‑driven serverless knowledge ingestion pipeline and the persona‑based AI assistant that powers OpsBuddy.
+2026-06-25 21:59:36 [INFO] in is Follow up method
+2026-06-25 21:59:37 [INFO] result======content='YES' additional_kwargs={'reasoning_content': 'We need to determine if the conversation history contains the exact information needed to answer: "Mean Time To Resolve (MTTR) is decreased by how much percentage?" The conversation: The first assistant answer: "The OpsBuddy project delivered several measurable benefits: - Reduced manual support effort by roughly 100 hours per week. - Decreased Mean Time To Resolve (MTTR) by about 40\u202f%. - Shortened onboarding time for new support engineers by 2 weeks. ..."\n\nThus, the question is answered: "decreased by about 40%." The exact information is present. So answer "YES".'} response_metadata={'finish_reason': 'stop', 'model_name': 'openai/gpt-oss-20b', 'system_fingerprint': 'fp_728f7c3b5b', 'service_tier': 'on_demand', 'model_provider': 'groq'} id='lc_run--019eff9d-9165-7b81-8d13-b8d7dce90c2f' tool_calls=[] invalid_tool_calls=[] usage_metadata={'input_tokens': 562, 'output_tokens': 134, 'total_tokens': 696, 'output_token_details': {'reasoning': 124}}
+2026-06-25 21:59:37 [INFO] In inference....after getting intent====YES
+2026-06-25 21:59:37 [INFO] In inference.... after get context
+2026-06-25 21:59:37 [INFO] User: what is the impact of project OpsBuddy?
+Assistant: The OpsBuddy project delivered several measurable benefits:
+
+- **Reduced manual support effort** by roughly **100 hours per week**.  
+- **Decreased Mean Time To Resolve (MTTR)** by about **40 %**.  
+- **Shortened onboarding time** for new support engineers by **2 weeks**.  
+- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.
+User: Manual support reduced by How many hours per week ?
+Assistant: The manual support effort was reduced by roughly **100 hours per week**.
+User: what is the tech stack of project Ops Buddy?
+Assistant: **OpsBuddy tech stack (as listed in the context)**  
+
+| Category | Components |
+|----------|------------|
+| **Core language & framework** | Python, FastAPI, Pydantic |
+| **LLM & embeddings** | Claude Sonnet 3.5 & 3.7 (AWS Bedrock), Amazon Titan V1 Embeddings |
+| **RAG & retrieval** | OpenSearch Serverless, BM25, Cross‑embedding retrieval |
+| **Agent orchestration & RAG tooling** | LangChain, LangGraph, Multi‑Agent Orchestration |
+| **Data storage & retrieval** | ChromaDB |
+| **APIs & services** | OpenAI API |
+| **Monitoring & observability** | Grafana |
+| **Prompt engineering** | Structured Prompt Engineering |
+
+These components together enable the event‑driven serverless knowledge ingestion pipeline and the persona‑based AI assistant that powers OpsBuddy.
+2026-06-25 21:59:37 [INFO] in stream llm response
+2026-06-25 21:59:37 [INFO] prompt
+2026-06-25 21:59:37 [INFO] prompt==You are a helpful and conversational assistant. Answer the user's question based on the provided Context and our ongoing Conversation History.
+
+How to handle the information:
+- Use the Conversation History to understand what the user is referring to (like pronouns or previous topics).
+- Rely on the provided Context to give accurate answers. 
+- If the context simply doesn't contain the answer, kindly let the user know by saying: "I am sorry, I don't know."
+If the answer is not present in the context,
+respond with:
+
+"I am sorry, I don't know."
+
+Do not use external knowledge.
+
+Conversation History:
+User: what is the impact of project OpsBuddy?
+Assistant: The OpsBuddy project delivered several measurable benefits:
+
+- **Reduced manual support effort** by roughly **100 hours per week**.  
+- **Decreased Mean Time To Resolve (MTTR)** by about **40 %**.  
+- **Shortened onboarding time** for new support engineers by **2 weeks**.  
+- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.
+User: Manual support reduced by How many hours per week ?
+Assistant: The manual support effort was reduced by roughly **100 hours per week**.
+User: what is the tech stack of project Ops Buddy?
+Assistant: **OpsBuddy tech stack (as listed in the context)**  
+
+| Category | Components |
+|----------|------------|
+| **Core language & framework** | Python, FastAPI, Pydantic |
+| **LLM & embeddings** | Claude Sonnet 3.5 & 3.7 (AWS Bedrock), Amazon Titan V1 Embeddings |
+| **RAG & retrieval** | OpenSearch Serverless, BM25, Cross‑embedding retrieval |
+| **Agent orchestration & RAG tooling** | LangChain, LangGraph, Multi‑Agent Orchestration |
+| **Data storage & retrieval** | ChromaDB |
+| **APIs & services** | OpenAI API |
+| **Monitoring & observability** | Grafana |
+| **Prompt engineering** | Structured Prompt Engineering |
+
+These components together enable the event‑driven serverless knowledge ingestion pipeline and the persona‑based AI assistant that powers OpsBuddy.
+
+Context:
+User: what is the impact of project OpsBuddy?
+Assistant: The OpsBuddy project delivered several measurable benefits:
+
+- **Reduced manual support effort** by roughly **100 hours per week**.  
+- **Decreased Mean Time To Resolve (MTTR)** by about **40 %**.  
+- **Shortened onboarding time** for new support engineers by **2 weeks**.  
+- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.
+User: Manual support reduced by How many hours per week ?
+Assistant: The manual support effort was reduced by roughly **100 hours per week**.
+User: what is the tech stack of project Ops Buddy?
+Assistant: **OpsBuddy tech stack (as listed in the context)**  
+
+| Category | Components |
+|----------|------------|
+| **Core language & framework** | Python, FastAPI, Pydantic |
+| **LLM & embeddings** | Claude Sonnet 3.5 & 3.7 (AWS Bedrock), Amazon Titan V1 Embeddings |
+| **RAG & retrieval** | OpenSearch Serverless, BM25, Cross‑embedding retrieval |
+| **Agent orchestration & RAG tooling** | LangChain, LangGraph, Multi‑Agent Orchestration |
+| **Data storage & retrieval** | ChromaDB |
+| **APIs & services** | OpenAI API |
+| **Monitoring & observability** | Grafana |
+| **Prompt engineering** | Structured Prompt Engineering |
+
+These components together enable the event‑driven serverless knowledge ingestion pipeline and the persona‑based AI assistant that powers OpsBuddy.
+
+Question:
+Mean Time To Resolve (MTTR) is decreased by how much percentage?
+
+2026-06-25 21:59:38 [INFO] full answer==The Mean Time To Resolve (MTTR) was decreased by about **40 %**.
+2026-06-25 21:59:38 [INFO] In update_memory..
+2026-06-25 21:59:38 [INFO] In get_memory_messages
+2026-06-25 21:59:38 [INFO] In update_memory..after messages===[HumanMessage(content='what is the impact of project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='The OpsBuddy project delivered several measurable benefits:\n\n- **Reduced manual support effort** by roughly **100 hours per week**.  \n- **Decreased Mean Time To Resolve (MTTR)** by about **40\u202f%**.  \n- **Shortened onboarding time** for new support engineers by **2 weeks**.  \n- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[]), HumanMessage(content='Manual support reduced by How many hours per week ?', additional_kwargs={}, response_metadata={}), AIMessage(content='The manual support effort was reduced by roughly **100 hours per week**.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[]), HumanMessage(content='what is the tech stack of project Ops Buddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='**OpsBuddy tech stack (as listed in the context)**  \n\n| Category | Components |\n|----------|------------|\n| **Core language & framework** | Python, FastAPI, Pydantic |\n| **LLM & embeddings** | Claude Sonnet\u202f3.5 &\u202f3.7 (AWS\u202fBedrock), Amazon\u202fTitan\u202fV1 Embeddings |\n| **RAG & retrieval** | OpenSearch\u202fServerless, BM25, Cross‑embedding retrieval |\n| **Agent orchestration & RAG tooling** | LangChain, LangGraph, Multi‑Agent Orchestration |\n| **Data storage & retrieval** | ChromaDB |\n| **APIs & services** | OpenAI API |\n| **Monitoring & observability** | Grafana |\n| **Prompt engineering** | Structured Prompt Engineering |\n\nThese components together enable the event‑driven serverless knowledge ingestion pipeline and the persona‑based AI assistant that powers OpsBuddy.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
+2026-06-25 21:59:38 [INFO] In update_memory..after final messages===[HumanMessage(content='what is the impact of project OpsBuddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='The OpsBuddy project delivered several measurable benefits:\n\n- **Reduced manual support effort** by roughly **100 hours per week**.  \n- **Decreased Mean Time To Resolve (MTTR)** by about **40\u202f%**.  \n- **Shortened onboarding time** for new support engineers by **2 weeks**.  \n- Delivered an **enterprise‑safe, production‑ready GenAI system** that provides real‑time incident resolution support.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[]), HumanMessage(content='Manual support reduced by How many hours per week ?', additional_kwargs={}, response_metadata={}), AIMessage(content='The manual support effort was reduced by roughly **100 hours per week**.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[]), HumanMessage(content='what is the tech stack of project Ops Buddy?', additional_kwargs={}, response_metadata={}), AIMessage(content='**OpsBuddy tech stack (as listed in the context)**  \n\n| Category | Components |\n|----------|------------|\n| **Core language & framework** | Python, FastAPI, Pydantic |\n| **LLM & embeddings** | Claude Sonnet\u202f3.5 &\u202f3.7 (AWS\u202fBedrock), Amazon\u202fTitan\u202fV1 Embeddings |\n| **RAG & retrieval** | OpenSearch\u202fServerless, BM25, Cross‑embedding retrieval |\n| **Agent orchestration & RAG tooling** | LangChain, LangGraph, Multi‑Agent Orchestration |\n| **Data storage & retrieval** | ChromaDB |\n| **APIs & services** | OpenAI API |\n| **Monitoring & observability** | Grafana |\n| **Prompt engineering** | Structured Prompt Engineering |\n\nThese components together enable the event‑driven serverless knowledge ingestion pipeline and the persona‑based AI assistant that powers OpsBuddy.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[]), HumanMessage(content='Mean Time To Resolve (MTTR) is decreased by how much percentage?', additional_kwargs={}, response_metadata={}), AIMessage(content='The Mean Time To Resolve (MTTR) was decreased by about **40\u202f%**.', additional_kwargs={}, response_metadata={}, tool_calls=[], invalid_tool_calls=[])]
