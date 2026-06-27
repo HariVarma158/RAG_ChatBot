@@ -1,15 +1,11 @@
-import json
 from fastapi import FastAPI, File, UploadFile as UF, Query
 from typing import Annotated,Optional
 from src.config_loader import APP_CONFIG
 import src.ingest as ing
-import src.utils as util
 from pydantic import WithJsonSchema
 from fastapi.responses import StreamingResponse
 from src.logger import logger
 import src.orchestrator as orc
-
-
 
 # import logging
 # # Uvicorn's default logger
@@ -64,31 +60,12 @@ async def infer(question:str,source:Optional[str]=Query(None)):
     print("This is print log printing in log file...........")
     logger.info("In inference............question==="+question)
     try:    
-        #res= orc.process_request(question,source)
         return StreamingResponse(
             orc.process_request(question,source),
             media_type="text/event-stream"
         )
     except Exception as e:
         logger.exception(f"Error occurred in inference : {e}")
-
-    
-    
-    
-    """
-    
-    try:
-        ret_context,history=orc.process_request(question,source)
-
-        return StreamingResponse(
-            util.stream_llm_response(question, ret_context, history),
-            #media_type="text/plain"
-            media_type="text/event-stream"   
-        )
-    except Exception as ex:
-        logger.exception(f"Error occurred in inference : {ex}")
-    
-    """
     
     
 if __name__ == "__main__":
