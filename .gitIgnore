@@ -1,1 +1,4 @@
 .pvenv/
+__pycache__/
+AdvChroma_db/
+logs/

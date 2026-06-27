@@ -76,6 +76,7 @@ def update_memory(question: str, answer: str):
         )
     except Exception as e:
         logger.exception(f"Exception In update_memory..{e}")
+        
 
 
 

@@ -25,10 +25,10 @@ def chroma_ingest(file:UF,chunks):
             }
         )
         ids.append(f"{file.filename}_chunk_{idx}")
-        chdb.collection.add(
-            documents=documents,
-            metadatas=metadatas,
-            ids=ids
-        )
+    chdb.collection.add(
+        documents=documents,
+        metadatas=metadatas,
+        ids=ids
+    )
     print("*"*50)
     print(f"File Ingestion done")
