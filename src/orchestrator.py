@@ -12,16 +12,14 @@ async def process_request(question,source):
     logger.info("In inference....before fetching history")
     #yield here for getting history
     yield f"Fetching conversation history ..... \n"
-    #yield json.dumps({"status": "Searching"}) + "\n"
-    await asyncio.sleep(0.05)
+    await asyncio.sleep(0.03)
     
     history = ch.history_to_text()
     logger.info(f"In inference....after fetching history...{history}")
     
     #yield here for follow up
     yield f"detecting Intent... \n"
-    #yield json.dumps({"status": "Searching"}) + "\n"
-    await asyncio.sleep(0.05)
+    await asyncio.sleep(0.03)
     
     intent=int_ret.isFollowUp(question,history)
     logger.info(f"In inference....after getting intent===={intent}")
@@ -32,32 +30,25 @@ async def process_request(question,source):
         try:
             #yield json.dumps({"status": "Searching"}) + "\n"
             yield f"Retrieving context... \n"
-            await asyncio.sleep(0.05)
+            await asyncio.sleep(0.03)
             
             results=ret.retriever(question,source)
             ret_chunks = results["documents"][0]
         except Exception as e4:
             logger.exception(f"Error occurred during retrieval of query : {e4}")
-            #return {"answer": "An error occurred during retrieval."}
             yield f"No relevant information found \n"
-            #yield json.dumps({"status": "Searching"}) + "\n"
-            await asyncio.sleep(0.1)
+            await asyncio.sleep(0.03)
             return
     
         if not ret_chunks:
-            # return {
-            #         "answer": "No relevant information found."
-            # }
             yield f"No relevant information found \n"
-            await asyncio.sleep(0.05)
-            #yield json.dumps({"status": "Searching"}) + "\n"
+            await asyncio.sleep(0.03)
             return
         logger.info("In inference.... before reranking")
     
         try:
             yield f"Reranking context... \n"
-            #yield json.dumps({"status": "Searching"}) + "\n"
-            await asyncio.sleep(0.05)
+            await asyncio.sleep(0.03)
             ranked_res=rerank.rerank_docs(question,ret_chunks)
         except Exception as e5:
             logger.exception(f"Error occurred during reranking docs : {e5}")
@@ -66,8 +57,7 @@ async def process_request(question,source):
     
         try:
             yield f"fetching context.... \n"
-            #yield json.dumps({"status": "Searching"}) + "\n"
-            await asyncio.sleep(0.05)
+            await asyncio.sleep(0.03)
             
             ret_context=util.get_context(ranked_res)
         except Exception as e6:
@@ -76,23 +66,12 @@ async def process_request(question,source):
     
     logger.info("In inference.... after get context")
     logger.info(ret_context)
-    #logger.info("In inference....before fetching history")
-    #history = ch.history_to_text()
-    #logger.info(f"In inference....before streaming llm history...{history}")
-    #return ret_context, history
-    #llm_ans=util.stream_llm_response(question,ret_context,history)
-    #current = ""
-    
-    async for chunk in util.stream_llm_response(question, ret_context, history):
-        yield chunk
-
    
-    # for c in llm_ans:
-    #     current += c
-    #     # Send the progressively longer text
-    #     yield f"{current}"
-
-    #     await asyncio.sleep(0.01)
+    full_answer=""
+    async for chunk in util.stream_llm_response(question, ret_context, history):
+        full_answer+=chunk
+        yield chunk
+    logger.info("In inference.... after sending llm streaming response and before updating memory")
+    ch.update_memory(question, full_answer)
     
     #yield f"{llm_ans.content}"
-    #yield json.dumps({"response": llm_ans.content}) + "\n"
